@@ -8,7 +8,7 @@ after(async () => {
     await client.flushDb();
     await client.disconnect();
 });
-describe.only('Redis Hashes Commands ', function () {
+describe('Redis Hashes Commands ', function () {
     config();
     it('set a hash', async () => {
         try {
