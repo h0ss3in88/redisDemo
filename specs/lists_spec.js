@@ -8,7 +8,7 @@ after(async () => {
     await client.flushDb();
     await client.disconnect();
 });
-describe.only('Redis Lists Commands ', function () {
+describe('Redis Lists Commands ', function () {
     config();
     it('push to list', async () => {
         try {
